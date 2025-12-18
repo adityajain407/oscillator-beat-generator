@@ -1,22 +1,26 @@
-# ANTANTEATEREATER
+# Oscillator Beat Generator
+Oscillator Beat Generator is a guitar/bass effects pedal designed to generate rhythmic amplitude patterns by combining a microcontroller-driven Euclidean rhythm engine with analog signal control circuitry. While the concept takes inspiration from the HY-ESG software effect, this project reimagines it as a standalone hardware pedal, replacing digital envelopes with a fully analog envelope generator and voltage-controlled amplifier (VCA).
+At its core, the pedal uses a microcontroller-based sequencer to calculate and output rhythmically distributed trigger signals. An Arduino Nano is used for this purpose, selected primarily for convenience and availability. The timing and pattern logic are handled digitally, while the shaping and modulation of the audio signal remain strictly analog, resulting in a responsive and musically expressive output.
+User Controls and Inputs
+The Oscillator Beat Generator features seven adjustable controls that allow detailed manipulation of rhythmic behavior:
+Power / Bypass Switch
+Activates or disengages the effect.
+Tap Sync Button
+Allows the user to manually define tempo; the rhythm engine locks directly to this input.
+Envelope Rise Control
+Adjusts how quickly the amplitude increases when a step is triggered.
+Envelope Fall Control
+Sets the decay time after each triggered step.
+Cycle Length
+Determines the total number of steps that make up a single rhythmic loop.
+Active Beats
+Specifies how many steps within the loop produce an output.
+Pattern Shift
+Offsets the rhythm within the loop, changing the groove without altering its structure.
 
-Antanteatereater is a guitar/bass effect pedal which consists of a euclidean sequencer running into a VCA. It is based around the digital HY-ESG plugin, but using an analog envelope generator and vca, as well as being in a physical format.
+Concept Summary
 
-The euclidean sequencer runs on an MCU, in this case an arduino nano, simply because I had one lying around. The pedal has 7 controllable inputs:
-
--   On/Off Button
--   Tap Tempo Button (Sequencer syncs to this)
--   Envelope Attack
--   Envelope Release
--   Step (Total number of steps per cycle)
--   Pulse (Number of steps per cycle which are on)
--   Rotate (Offset of the cycle)
-
-The project is named after the design I chose for it, which is an ant-anteater-eater, aka an ant which eats anteaters :)
-
-### The Why -
-
-When I make music, my absolutely most used plugin is HY-ESG. I find it super versatile and very handy for adding some rhythm to otherwise static pads and other noise. I wanted a way to use this effect in live performances, and given I don't like to have things running through my laptop on stage (due to reliability), and the fact that using it requires a lot of extra hardware, I decided to make a version of it that just worked like any regular guitar pedal.
+By merging algorithmic rhythm generation with analog dynamics processing, the Oscillator Beat Generator enables complex, tempo-synced rhythmic modulation that transforms continuous instrument signals into evolving, beat-driven textures. The pedal is intended to function as a creative tool for rhythmic experimentation, bridging the gap between electronic sequencing techniques and traditional instrument effects.
 
 ### Pictures!
 
@@ -50,4 +54,5 @@ The wooden top plate will be laser cut and engraved:
 | Item             | Part Name          | Quantity          | Source       | Link                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Unit Cost       | Total Cost       | Notes                                                             |
 | PCB              | PCB                | 5 \(2 assembled\) | JLCPCB       | NA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | NA              | 28\.3            | Incl\. Shipping + Tax                                             |
 | Aliexpress Parts | Aliexpress Parts   | NA                | Aliexpress   | NA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | NA              | 35\.46           | Incl\. Shipping + Tax                                             |
-| Total Cost       |                    |                   |              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                 | 63\.76           |                                                                   |
+| Total Cost       |                    |                   |              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                 | 74\.76           |                                                                   |
+
