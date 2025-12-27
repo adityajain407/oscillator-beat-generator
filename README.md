@@ -1,27 +1,23 @@
 # Oscillator Beat Generator
-Oscillator Beat Generator is a guitar/bass effects pedal designed to generate rhythmic amplitude patterns by combining a microcontroller-driven Euclidean rhythm engine with analog signal control circuitry. While the concept takes inspiration from the HY-ESG software effect, this project reimagines it as a standalone hardware pedal, replacing digital envelopes with a fully analog envelope generator and voltage-controlled amplifier (VCA).
-At its core, the pedal uses a microcontroller-based sequencer to calculate and output rhythmically distributed trigger signals. An Arduino Nano is used for this purpose, selected primarily for convenience and availability. The timing and pattern logic are handled digitally, while the shaping and modulation of the audio signal remain strictly analog, resulting in a responsive and musically expressive output.
+The Oscillator Beat Generator is a guitar and bass effects pedal that creates rhythmic amplitude patterns. It combines a microcontroller-driven Euclidean rhythm engine with analog signal control circuitry. While the idea takes inspiration from the HY-ESG software effect, this project turns it into a standalone hardware pedal. It replaces digital envelopes with a fully analog envelope generator and voltage-controlled amplifier (VCA). 
+
+The pedal uses a microcontroller-based sequencer to calculate and output rhythmically distributed trigger signals. An Arduino Nano serves this purpose, mainly chosen for its convenience and availability. The timing and pattern logic are managed digitally, but audio signal shaping and modulation stay strictly analog. This design leads to a responsive and musically expressive output.
+
 User Controls and Inputs
-The Oscillator Beat Generator features seven adjustable controls that allow detailed manipulation of rhythmic behavior:
-Power / Bypass Switch
-Activates or disengages the effect.
-Tap Sync Button
-Allows the user to manually define tempo; the rhythm engine locks directly to this input.
-Envelope Rise Control
-Adjusts how quickly the amplitude increases when a step is triggered.
-Envelope Fall Control
-Sets the decay time after each triggered step.
-Cycle Length
-Determines the total number of steps that make up a single rhythmic loop.
-Active Beats
-Specifies how many steps within the loop produce an output.
-Pattern Shift
-Offsets the rhythm within the loop, changing the groove without altering its structure.
+
+The Oscillator Beat Generator has seven adjustable controls for detailed manipulation of rhythmic behavior:
+
+- **Power / Bypass Switch**: Turns the effect on or off. 
+- **Tap Sync Button**: Lets the user set the tempo manually; the rhythm engine syncs directly to this input. 
+- **Envelope Rise Control**: Changes how fast the amplitude grows when a step is triggered. 
+- **Envelope Fall Control**: Adjusts the decay time after each triggered step. 
+- **Cycle Length**: Sets the total number of steps in a single rhythmic loop. 
+- **Active Beats**: Defines how many steps within the loop produce an output. 
+- **Pattern Shift**: Moves the rhythm within the loop, altering the groove without changing its structure.
 
 Concept Summary
 
-By merging algorithmic rhythm generation with analog dynamics processing, the Oscillator Beat Generator enables complex, tempo-synced rhythmic modulation that transforms continuous instrument signals into evolving, beat-driven textures. The pedal is intended to function as a creative tool for rhythmic experimentation, bridging the gap between electronic sequencing techniques and traditional instrument effects.
-
+By blending algorithmic rhythm generation with analog dynamics processing, the Oscillator Beat Generator offers complex, tempo-synced rhythmic modulation. It changes continuous instrument signals into evolving, beat-driven textures. The pedal aims to be a creative tool for rhythmic experimentation, connecting electronic sequencing techniques with traditional instrument effects.
 ### Pictures!
 
 ![3D Render](3d_render.png)
@@ -54,6 +50,7 @@ By merging algorithmic rhythm generation with analog dynamics processing, the Os
 | PCB              | PCB                | 5 \(2 assembled\) | JLCPCB       | NA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | NA              | 44\.85            | Incl\. Shipping + Tax                                             |
 | Aliexpress Parts | Aliexpress Parts   | NA                | Aliexpress   | NA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | NA              | 27\.46           | Incl\. Shipping + Tax                                             |
 | Total Cost       |                    |                   |              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                 | 72\.31           |                                                                   |
+
 
 
 
